@@ -133,6 +133,9 @@ $(call inherit-product-if-exists, device/xiaomi/surya-miuicamera/config.mk)
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.camera.perflock.enable=0
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
