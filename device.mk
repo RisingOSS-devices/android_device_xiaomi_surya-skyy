@@ -349,6 +349,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
 PRODUCT_PACKAGES += \
+    J20CApertureOverlay \
     J20CCarrierConfig \
     J20CFrameworks \
     J20CSettings \
