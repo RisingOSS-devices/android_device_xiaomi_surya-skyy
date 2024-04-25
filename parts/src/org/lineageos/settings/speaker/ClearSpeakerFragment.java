@@ -29,7 +29,6 @@ import androidx.preference.PreferenceFragment;
 import android.widget.CompoundButton;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 
