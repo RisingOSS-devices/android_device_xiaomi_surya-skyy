@@ -113,6 +113,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
