@@ -12,12 +12,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_surya
+# Boot animation resolution.
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintainer
+EVEREST_MAINTAINER := Skyy丨HinohArata
+
+# Extra Stuffs
+TARGET_SUPPORTS_BLUR := true
+TARGET_BUILD_INNERTUNE := true
+WITH_GAPPS := true
+
+# Device Manufacture
+PRODUCT_NAME := everest_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+USE_GMS := true
