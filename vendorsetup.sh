@@ -9,3 +9,6 @@ git clone --depth=1 https://github.com/HinohArata/sky_kernel.git -b skyhigh-new 
 
 # Firmware
 git clone https://gitlab.com/HinohArata/firmware_xiaomi_surya.git firmware/xiaomi/surya
+
+# MiuiCamera
+git clone https://gitlab.com/HinohArata/vendor_xiaomi_surya-miuicamera.git -b leica vendor/xiaomi/camera
