@@ -1,5 +1,5 @@
 # Hardware
-git clone https://github.com/HinohArata/surya_device.git -b hardware hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
 
 # Vendor
 git clone https://github.com/HinohArata/surya_vendor.git vendor/xiaomi/surya
