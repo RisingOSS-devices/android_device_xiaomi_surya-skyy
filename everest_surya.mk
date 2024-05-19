@@ -19,11 +19,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Maintainer
 EVEREST_MAINTAINER := Skyy丨HinohArata
+EVEREST_BUILD_TYPE := OFFICIAL
 
 # Extra Stuffs
 TARGET_SUPPORTS_BLUR := true
 TARGET_BUILD_INNERTUNE := true
 WITH_GAPPS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
 
 # Device Manufacture
 PRODUCT_NAME := everest_surya
