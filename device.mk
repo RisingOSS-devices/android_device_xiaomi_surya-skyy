@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.2-impl
+    android.hardware.soundtrigger@2.2-impl \
+    libaudioroute.vendor
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -284,7 +285,9 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8150/media/conf_files/sm6150/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
