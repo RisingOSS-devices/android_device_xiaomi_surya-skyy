@@ -33,6 +33,9 @@ $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# Signing
+-include vendor/private-keys/keys/keys.mk
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
