@@ -12,23 +12,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Boot animation resolution.
+# OrionOS
+ORION_MAINTAINER := Skyy丨Chick
+ORION_MAINTAINER_LINK := https://t.me/HinohArata
+ORION_BUILD_TYPE := UNOFFICIAL
+ORION_GAPPS := true
+TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := false
 
-# Maintainer
-EVEREST_MAINTAINER := Skyy丨HinohArata
-EVEREST_BUILD_TYPE := OFFICIAL
-
-# Extra Stuffs
-TARGET_SUPPORTS_BLUR := true
-TARGET_BUILD_INNERTUNE := true
-WITH_GAPPS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
+# Recomended true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
 
 # Device Manufacture
-PRODUCT_NAME := everest_surya
+PRODUCT_NAME := orion_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
