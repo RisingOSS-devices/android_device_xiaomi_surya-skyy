@@ -15,9 +15,8 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # OrionOS
-ORION_MAINTAINER := Skyy丨Chick
+ORION_MAINTAINER := Skyy丨アラタ
 ORION_MAINTAINER_LINK := https://t.me/HinohArata
-ORION_BUILD_TYPE := UNOFFICIAL
 ORION_GAPPS := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
