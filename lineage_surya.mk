@@ -14,21 +14,16 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# OrionOS
-ORION_MAINTAINER := Skyy丨アラタ
-ORION_MAINTAINER_LINK := https://t.me/HinohArata
-ORION_GAPPS := true
+# RisingOS
+TARGET_CORE_GMS := true
+WITH_GMS := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := false
-
-# Recomended true
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 # Device Manufacture
-PRODUCT_NAME := orion_surya
+PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
@@ -40,3 +35,10 @@ BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIX
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys"
+    
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Qualcomm Snapdragon 732G" \
+    RISING_MAINTAINER="Skyy丨アラタ"
+
+PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt
