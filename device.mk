@@ -30,6 +30,9 @@ PRODUCT_COPY_FILES += \
 # Inherit surya firmware images
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
+# XiaomiParts
+$(call inherit-product-if-exists, device/xiaomi/surya/parts/parts.mk)
+
 # Signing
 -include vendor/private-keys/keys/keys.mk
 
