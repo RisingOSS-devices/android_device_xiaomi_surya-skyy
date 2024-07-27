@@ -124,4 +124,5 @@ void vendor_load_properties() {
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
+    property_override("ro.product.mod_device", "surya_global");
 }
