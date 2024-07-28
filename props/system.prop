@@ -17,6 +17,9 @@ ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20  
 power.saving.mode=1
 
+# Camera
+persist.sys.cam.skip_detach_image=true
+
 # Charger
 ro.charger.enable_suspend=true
 
