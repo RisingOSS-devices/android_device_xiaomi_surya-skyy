@@ -77,6 +77,9 @@ on boot
 
     chown system system /sys/kernel/boot_slpi/ssr
 
+    # wifi default country code
+    setprop ro.boot.wificountrycode 00
+
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules
