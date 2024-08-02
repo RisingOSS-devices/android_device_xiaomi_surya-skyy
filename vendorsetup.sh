@@ -21,7 +21,7 @@ fi
 KT="kernel/xiaomi/surya"
 if ! [ -d "$KT" ]; then
     echo "$KT not found! Cloning now..."
-    if ! git clone -q https://github.com/HinohArata/kernel-4.14 -b claire "$KERNEL"; then
+    if ! git clone -q https://github.com/HinohArata/kernel-4.14 -b claire "$KT"; then
         echo "Cloning failed! Aborting...\n"
         exit 1
     fi
@@ -52,5 +52,13 @@ if ! [ -d "$PART" ]; then
     echo "$PART not found! Cloning now..."
     if ! git clone -q https://github.com/hinohArata/parts.git -b qpr3 "$PART"; then
         echo "Cloning failed! Aborting...\n"
+    fi
+fi
+
+KEY="vendor/private-keys/keys"
+if ! [ -d "$KEY" ]; then
+    echo "$KEY not found! Cloning now..."
+    if ! git clone -q https://github.com/HinohArata/keys -b full "$KEY"; then
+        echo "Cloning ${KEY} failed! Aborting...\n"
     fi
 fi
