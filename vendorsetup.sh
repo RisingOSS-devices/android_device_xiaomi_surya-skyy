@@ -38,11 +38,19 @@ if ! [ -d "$FW" ]; then
 fi
 
 # MiuiCamera
-CAM="vendor/xiaomi/camera"
+CAM="vendor/xiaomi/surya-miuicamera"
 if ! [ -d "$CAM" ]; then
     echo "$CAM not found! Cloning now..."
-    if ! git clone -q https://github.com/hinohArata/vendor_xiaomi_camera.git -b 14 "$CAM"; then
-        echo "Cloning failed! Aborting...\n"
+    if ! git clone -q https://github.com/hinohArata/vendor_xiaomi_surya-miuicamera.git -b 14-tes "$CAM"; then
+        echo "Cloning ${CAM} failed! Aborting...\n"
+    fi
+fi
+
+CAM2="device/xiaomi/surya-miuicamera"
+if ! [ -d "$CAM2" ]; then
+    echo "$CAM2 not found! Cloning now..."
+    if ! git clone -q https://github.com/hinohArata/device_xiaomi_surya-miuicamera.git "$CAM2"; then
+        echo "Cloning ${CAM2} failed! Aborting...\n"
     fi
 fi
 
