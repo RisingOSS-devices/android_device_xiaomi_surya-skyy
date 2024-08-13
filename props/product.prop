@@ -1,2 +1,5 @@
 # LMKD
 ro.config.low_ram=false
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
