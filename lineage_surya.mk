@@ -15,12 +15,13 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RisingOS
-TARGET_CORE_GMS := true
+# TARGET_CORE_GMS := true
 WITH_GMS := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := false
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
 # Device Manufacture
 PRODUCT_NAME := lineage_surya
@@ -40,6 +41,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_CHIPSET="Qualcomm Snapdragon 732G" \
     RISING_MAINTAINER="Skyy丨アラタ"
-
-PRODUCT_PACKAGES += \
-    LatinIMEGooglePrebuilt
