@@ -20,8 +20,10 @@ WITH_GMS := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := false
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+ifeq ($(strip $(WITH_GMS)),true)
+    TARGET_DEFAULT_PIXEL_LAUNCHER := true
+endif
 
 # Device Manufacture
 PRODUCT_NAME := lineage_surya
