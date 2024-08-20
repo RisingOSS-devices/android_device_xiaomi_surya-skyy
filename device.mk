@@ -124,6 +124,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 # Camera
+$(call inherit-product-if-exists, device/xiaomi/surya-miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     libpiex_shim
 
