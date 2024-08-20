@@ -34,6 +34,9 @@ endif
 # Inherit surya firmware images
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
+# XiaomiParts
+$(call inherit-product, device/xiaomi/surya/parts/parts.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -128,10 +131,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libpiex_shim
-
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
