@@ -25,6 +25,7 @@ ifeq ($(strip $(WITH_GMS)),true)
 endif
 RISING_MAINTAINER=Skyy丨アラタ
 
+# Device Manufacturer
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
@@ -37,4 +38,5 @@ BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIX
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
-    RISING_CHIPSET="Qualcomm Snapdragon 732G"
+    RISING_CHIPSET="Qualcomm Snapdragon 732G" \
+    RISING_MAINTAINER="Skyy丨アラタ"
