@@ -27,7 +27,7 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
 # XiaomiParts
-$(call inherit-product, device/xiaomi/surya/parts/parts.mk)
+$(call inherit-product-if-exists, device/xiaomi/surya/parts/parts.mk)
 
 # GalleryGo
 $(call inherit-product-if-exists, vendor/prebuilts/GalleryGO/config.mk)
