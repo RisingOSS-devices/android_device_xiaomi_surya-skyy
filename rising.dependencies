@@ -1,0 +1,44 @@
+[
+  {
+    "remote"      : "github",
+    "repository"  : "Arata-Stuffs/android_vendor_xiaomi_surya",
+    "branch"      : "qpr3",
+    "target_path" : "vendor/xiaomi/surya"
+  },
+  {
+    "remote"      : "gitlab",
+    "repository"  : "HinohArata/temporary-xp",
+    "branch"      : "xp",
+    "target_path" : "device/xiaomi/surya/parts"
+  },
+  {
+    "remote"      : "gitlab",
+    "repository"  : "HinohArata/temporary",
+    "branch"      : "krn",
+    "target_path" : "kernel/xiaomi/surya"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "Arata-Stuffs/android_hardware_xiaomi",
+    "branch"      : "fourteen-rising",
+    "target_path" : "hardware/xiaomi"
+  },
+  {
+    "remote"      : "gitlab",
+    "repository"  : "HinohArata/temporary-v",
+    "branch"      : "camv",
+    "target_path" : "vendor/xiaomi/surya-miuicamera"
+  },
+  {
+    "remote"      : "gitlab",
+    "repository"  : "HinohArata/temporary-d",
+    "branch"      : "camd",
+    "target_path" : "device/xiaomi/surya-miuicamera"
+  },
+  {
+    "remote"      : "gitlab",
+    "repository"  : "HinohArata/firmware_xiaomi_surya",
+    "branch"      : "tiramisu",
+    "target_path" : "firmware/xiaomi/surya"
+  }
+]
