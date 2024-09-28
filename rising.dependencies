@@ -25,13 +25,13 @@
   },
   {
     "remote"      : "gitlab",
-    "repository"  : "HinohArata/temporary-v",
+    "repository"  : "HinohArata/temporary-v1",
     "branch"      : "camv",
     "target_path" : "vendor/xiaomi/surya-miuicamera"
   },
   {
     "remote"      : "gitlab",
-    "repository"  : "HinohArata/temporary-d",
+    "repository"  : "HinohArata/temporary-d1",
     "branch"      : "camd",
     "target_path" : "device/xiaomi/surya-miuicamera"
   },
